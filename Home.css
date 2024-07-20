@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 .u-section-1 {
   background-image: none;
   min-height: 100vh;
@@ -7,7 +11,7 @@
   --radius: 50px;
   width: 800px;
   min-height: 740px;
-  background-image: linear-gradient(145deg, #63b5bb, #59a3a8);
+  background-image: linear-gradient(145deg, #59a3a8, #63b5bb);
   box-shadow: 20px 20px 40px #549a9f, -20px -20px 40px #72d0d7;
   height: auto;
   margin: 27px auto;
@@ -373,6 +377,15 @@
 .u-section-1 .u-carousel-control-4 {
   width: 50px;
   height: 50px;
+}
+
+@media (min-width: 1200px) {
+  .u-section-1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1199px) {
